@@ -1,0 +1,208 @@
+.container {
+    top: 80px;
+    background: #0c0c0c;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 30px;
+    min-height: 100vh;
+    max-height: 100%;
+    position: relative;
+    color: #fff;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.title {
+    color: #f8ef00;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 100% */
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.heightContainer {
+    height: 100vh;
+    background-color: #1d1818;
+}
+
+.test_container {
+    height: 500px;
+    background-color: #0c0c0c;
+}
+
+.filter__container {
+    padding: 125px 150px 0 150px;
+    min-height: 80px;
+    background-color: #1d1818;
+    color: white;
+}
+
+.filter__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.filter__item {
+    padding: 10px;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+    -moz-transition: color 0.3s ease, background-color 0.3s ease;
+    -ms-transition: color 0.3s ease, background-color 0.3s ease;
+    -o-transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.filter__item:hover {
+    background-color: white;
+    color: #0c0c0c;
+}
+
+.resultList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    list-style: none;
+}
+
+.resultItem {
+    margin: 10px 10px;
+    padding: 25px;
+    flex-basis: 40%;
+    border: 2px solid var(--Bright-Aqua, #00f0ff);
+    color: var(--Bright-Aqua, #00f0ff);
+    background: rgba(0, 240, 255, 0.1);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 2.7px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.itemTheme {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    word-wrap: break-word;
+    color: #f8ef00;
+}
+
+.count {
+    font-weight: 600;
+}
+
+.answerList {
+    list-style: none;
+}
+
+.answers {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-shadow: white 3px 3px 10px;
+}
+
+.filter__container {
+    min-height: 80px;
+    color: white;
+}
+
+.filter__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-top: 70px;
+    margin-bottom: 0;
+    background-color: #0c0c0c;
+}
+
+.filter__item {
+    margin-top: 50px;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+    -moz-transition: color 0.3s ease, background-color 0.3s ease;
+    -ms-transition: color 0.3s ease, background-color 0.3s ease;
+    -o-transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.filter__item:hover {
+    background-color: #0c0c0c;
+    color: white;
+}
+
+.graphContainer {
+    background-color: #0c0c0c;
+    padding: 30px;
+}
+
+.barContainer {
+    padding-top: 50px;
+}
+
+.buttonDownload {
+    margin-top: 20px;
+    background-color: #f8ef00;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    /*150%*/
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transition: background-color 0.4s ease, box-shadow 0.3s ease,
+        color 0.4s ease;
+    -webkit-transition: background-color 0.4s ease, box-shadow 0.3s ease,
+        color 0.4s ease;
+    -moz-transition: background-color 0.4s ease, box-shadow 0.3s ease,
+        color 0.4s ease;
+    -ms-transition: background-color 0.4s ease, box-shadow 0.3s ease,
+        color 0.4s ease;
+    -o-transition: background-color 0.4s ease, box-shadow 0.3s ease,
+        color 0.4s ease;
+}
+
+.buttonDownload:hover {
+    background-color: #f75049;
+    box-shadow: 5px 5px 5px #5c3a3a;
+}
+
+.buttonDownload:active {
+    color: #5ef6ff;
+    background-color: rgba(94, 246, 255, 0.3);
+    box-shadow: 5px 5px 5px rgba(94, 246, 255, 0.1);
+}

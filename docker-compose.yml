@@ -1,0 +1,31 @@
+version: "3.9"
+services:
+  db:
+    image: postgres:15
+    container_name: db
+    command: -p 5432
+    expose:
+      - 5432
+    env_file:
+      - .env
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  server:
+    build:
+      context: backend/.
+    container_name: fast_api_v_Docker
+    command: ["fastapi_app/docker/app.sh"]
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+
+  client:
+    build: ./frontend/
+    ports:
+    - "3000:3000"
+    volumes:
+    - ./front:/user/src/app
+    depends_on:
+    - server

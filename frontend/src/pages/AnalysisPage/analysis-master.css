@@ -1,0 +1,20 @@
+.answers {
+    margin: 5px;
+    padding: 0 200px;
+}
+
+.answer_visible .answer__details {
+    display: block;
+}
+
+.answer_hidden .answer__details {
+    display: none;
+}
+
+.expandedItem {
+    width: 70vw;
+    height: 70vh;
+    background: #6a6563;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
